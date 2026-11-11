@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="post.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bloggen</h1>
+            <a href="index.html">Hem</a>
+        </nav>
+    </header>
+
+    <main>
+        <p id="error" hidden></p>
+        <article id="post"></article>
+        <section id="comments"></section>
+
+        <form id="commentForm">
+            <label for="commentInput">Skriv en kommentar</label>
+            <input id="commentInput" type="text">
+            <button type="submit">Skicka</button>
+        </form>
+
+        <button id="editBtn">Redigera</button>
+
+        <form id="editForm" hidden>
+            <label for="editTitle">Rubrik</label>
+            <input id="editTitle" type="text">
+            <label for="editContent">Innehåll</label>
+            <textarea id="editContent"></textarea>
+            <button type="submit">Skicka</button>
+        </form>
+
+        <button id="deleteBtn">Ta bort</button>
+    </main>
+
+    <footer>
+        <p>&copy; Bloggen 2026</p>
+    </footer>
+</body>
+</html>
